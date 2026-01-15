@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Chroma / vector database
+chroma_langchain_db/
+
+# Data (raw + large files)
+data/raw/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log   
