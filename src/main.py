@@ -32,11 +32,16 @@ db = Chroma(
     embedding_function=embeddings
 )
 
+print("\nDDoS Analyzer — Interactive Query Mode\n")
+
 while True:
-    print("\n\n---------------------------------")
-    question = input("Ask your question (q to quit): ")
-    print("\n\n")
+    print("\n" + "=" * 70)
+    question = input("Ask your question (q to quit): ").strip()
+    print("=" * 70)
+    print("\n")
+
     if question.lower() == 'q':
+        print("\nExiting...\n")
         break
 
     docs = db.similarity_search(question, k=5)
